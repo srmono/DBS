@@ -1,0 +1,40 @@
+
+Css/HTML reset 
+BOX Model: Padding/margins/border
+Selectors
+colors 
+CSS3 : border radius, shapes, shadows, animations......
+measurement
+media
+
+
+viewport
+screen
+visible area
+document
+
+---------------------
+
+key: value
+
+property: value
+
+width:  250px 
+color: black
+
+selector { property: vlaue; }
+
+selector helps to select HTML elements
+
+tag selector: div, p, 
+id select: #idname
+class selector: .classname
+
+Inline
+emebeded
+external css 
+
+Priority
+
+
+

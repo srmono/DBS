@@ -9,8 +9,32 @@ https://cdnjs.com/libraries/font-awesome
 Google fonts:
 https://fonts.google.com/specimen/Roboto
 
+
+
+
 Images are from freepik:
 https://www.freepik.com/
 
-You may take images from: 
-https://unsplash.com/
+
+Other references for future purpose:
+
+Images / Video / SVG : - 
+01 - https://www.freepik.com/
+02 - https://storyset.com/
+03 - https://undraw.co/
+04 - https://pixabay.com/
+05 - https://unsplash.com/ 
+06 - https://pixabay.com/
+07 - https://lottiefiles.com/featured
+
+clip-path generator:
+https://bennettfeely.com/clippy/
+
+border-radius genrator:
+https://9elements.github.io/fancy-border-radius/
+
+font awesome cdn link:
+https://cdnjs.com/libraries/font-awesome
+
+
+https://github.com/srmono/DBS.git

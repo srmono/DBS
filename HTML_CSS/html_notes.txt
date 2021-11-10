@@ -94,3 +94,48 @@ External sites then use Absolute path
 
 file:///I:/Training/DBS/Schedule/HTML_CSS/web/www.google.com
 
+
+Anchors:
+
+Links 
+Taget 
+Absolute path
+relative path
+Tab Index
+title 
+accesskeys
+
+Alt + a
+Shift + Alt/ctrl + a
+
+Udacity -> accessibility training 
+
+id links/ named anchors
+
+file:///I:/Training/DBS/Schedule/HTML_CSS/web/index.html#cat
+
+--------------------------
+
+Images:
+Take right sizes
+Device specific images (same image)
+Never resize or increase the size 
+jpg
+png 
+gif
+svg
+webp
+
+---------------------
+
+video formats
+mp4 
+mpeg 
+ogg 
+.........
+
+Inputs 
+
+
+
+
