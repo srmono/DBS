@@ -1,0 +1,96 @@
+HTML: 
+Hyper Text Markup Language
+
+Browsers and Engines
+
+Browsers: Chrome, MoZ, Opera, Safari....
+
+W3C Standards
+
+Document + type?: 
+
+HTML Version?
+HTML 1.0
+HTML 2.0
+...
+DHTML
+
+HTML 4.0
+HTML 4.1
+XHTML 
+
+3 types of the doctypes
+
+    Strict: You must follow the rules
+    Loose  : 
+    Frameset: Frames, Frameset
+    
+
+Tags ( 2 types) & Elements
+
+Various types of the content: 
+Text, List, table, images, videos, headers...., links...
+
+Text : h, p, div, li, img, video...........
+
+2 types: Block level Elements and Inline Elements
+
+Block Level Elements: It takes full width and it has line break
+Inline: It takes content width, it doesn't have line break
+
+<Tagname> </Tagname>
+
+<p> </p>
+
+<meta>
+
+Attributes: Additional characteristics of the Elements
+
+<p color="blue"> </p>
+
+HTML 5: <!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head> </head>
+    <body>
+    
+    </body>
+</html>
+------------------------------
+
+Text :
+    Headings 
+    Paragraph
+    white spaces 
+    ..........
+
+
+    ---------------------------
+
+Entities: 
+&name;
+&798;
+
+
+© 2007-2021 Flipkart.com
+
+--------------------------------
+
+Relative path
+./ pwd
+
+../ one level up
+
+../../ two levels up 
+
+inside
+./products/page.html
+
+Absolute path:
+I:\Training\DBS\Schedule\HTML_CSS\web\about.html
+
+External sites then use Absolute path
+
+file:///I:/Training/DBS/Schedule/HTML_CSS/web/www.google.com
+

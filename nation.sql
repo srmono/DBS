@@ -267,4 +267,17 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
+/*copy of country_stats*/
+create table country_reports select * from country_stats;
 
+/*create population_logs: to log the changes in the population column of country_reports table*/
+
+create table population_logs(
+  log_id int AUTO_INCREMENT,
+  country_id int NOT NULL,
+  year int NOT NULL,
+  old_population int not NULL,
+  new_population int not NULL,
+  updated_at timestamp DEFAULT current_timestamp,
+  PRIMARY KEY(log_id)
+)

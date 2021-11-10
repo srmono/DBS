@@ -1,0 +1,16 @@
+Plugins/Frameworks/Image Source reference
+
+swiper.js link:
+https://swiperjs.com/
+
+Font awesome cdn link:
+https://cdnjs.com/libraries/font-awesome
+
+Google fonts:
+https://fonts.google.com/specimen/Roboto
+
+Images are from freepik:
+https://www.freepik.com/
+
+You may take images from: 
+https://unsplash.com/
