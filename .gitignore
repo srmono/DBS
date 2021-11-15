@@ -1,0 +1,41 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/REACT/reduxdemo/node_modules
+/REACT/reduxdemo/.pnp
+/REACT/reduxdemo/.pnp.js
+
+/REACT/demoapp/node_modules
+/REACT/demoapp/.pnp
+/REACT/demoapp.pnp.js
+
+# testing
+/REACT/reduxdemo/coverage
+
+/REACT/demoapp/coverage
+
+# production
+/REACT/reduxdemo/build
+
+/REACT/demoapp/build
+
+# misc
+/REACT/reduxdemo/.DS_Store
+/REACT/reduxdemo/.env.local
+/REACT/reduxdemo/.env.development.local
+/REACT/reduxdemo/.env.test.local
+/REACT/reduxdemo/.env.production.local
+
+/REACT/reduxdemo/npm-debug.log*
+/REACT/reduxdemo/yarn-debug.log*
+/REACT/reduxdemo/yarn-error.log*
+
+/REACT/demoapp/.DS_Store
+/REACT/demoapp/.env.local
+/REACT/demoapp/.env.development.local
+/REACT/demoapp/.env.test.local
+/REACT/demoapp/.env.production.local
+
+/REACT/demoapp/npm-debug.log*
+/REACT/demoapp/yarn-debug.log*
+/REACT/demoapp/yarn-error.log*

@@ -1,0 +1,32 @@
+[
+    {
+        "imageUrl": "haldi.jpg",
+        "brand": "grocery",
+        "offer": "30 to 70% discount",
+        "title": "grocery products"
+    },
+    {
+        "imageUrl": "family.jpg",
+        "brand": "events",
+        "offer": "30 to 70% discount",
+        "title": "events info"
+    },
+    {
+        "imageUrl": "dress.jpeg",
+        "brand": "Aurella",
+        "offer": "40 to 50% discount",
+        "title": "dresses"
+    },
+    {
+        "imageUrl": "haldi.jpg",
+        "brand": "grocery",
+        "offer": "30 to 70% discount",
+        "title": "grocery products"
+    },
+    {
+        "imageUrl": "family.jpg",
+        "brand": "events",
+        "offer": "30 to 70% discount",
+        "title": "events info"
+    }
+]

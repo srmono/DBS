@@ -1,0 +1,1 @@
+export const BUY_GREETING_CARDS = 'BUY_GREETING_CARDS'
