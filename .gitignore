@@ -7,17 +7,27 @@
 
 /REACT/demoapp/node_modules
 /REACT/demoapp/.pnp
-/REACT/demoapp.pnp.js
+/REACT/demoapp/.pnp.js
+
+/crud/frontend/node_modules
+/crud/frontend/.pnp
+/crud/frontend/.pnp.js
+
+/crud/backend/node_modules
 
 # testing
 /REACT/reduxdemo/coverage
 
 /REACT/demoapp/coverage
 
+/crud/frontend/coverage
+
 # production
 /REACT/reduxdemo/build
 
 /REACT/demoapp/build
+
+/crud/frontend/build
 
 # misc
 /REACT/reduxdemo/.DS_Store
