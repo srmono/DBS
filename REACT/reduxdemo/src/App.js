@@ -6,12 +6,14 @@ import store from './redux/store';
 import HooksGiftContainer from './components/HooksGiftContainer';
 import GreetContainer from './components/GreetContainer';
 import NewGiftContainer from './components/NewGiftContainer';
+import UserContainer from './components/UserContainer';
 
 function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        <NewGiftContainer />
+        <UserContainer />
+        {/* <NewGiftContainer /> */}
         {/* <GreetContainer />
         <HooksGiftContainer /> */}
         {/* <GiftContainer /> */}
