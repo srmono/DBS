@@ -5,13 +5,15 @@ import { Provider } from 'react-redux';
 import store from './redux/store';
 import HooksGiftContainer from './components/HooksGiftContainer';
 import GreetContainer from './components/GreetContainer';
+import NewGiftContainer from './components/NewGiftContainer';
 
 function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        <GreetContainer />
-        <HooksGiftContainer />
+        <NewGiftContainer />
+        {/* <GreetContainer />
+        <HooksGiftContainer /> */}
         {/* <GiftContainer /> */}
       </div>
     </Provider>

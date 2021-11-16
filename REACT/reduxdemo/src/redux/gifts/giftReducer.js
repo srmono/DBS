@@ -8,7 +8,7 @@ const giftReducer = (state = initialState, action) => {
     switch(action.type) {
         case BUY_GIFT: return {
             ...state,
-            numOfGifts: state.numOfGifts - 1
+            numOfGifts: state.numOfGifts - action.payload
         }
         default: return state
     }
