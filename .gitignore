@@ -17,6 +17,8 @@
 
 /projectsetup/paymentproject/node_modules
 
+/Spring/react-frontend/node_modules
+
 # testing
 /REACT/reduxdemo/coverage
 

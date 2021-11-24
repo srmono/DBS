@@ -2,7 +2,6 @@ import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { buyGift } from '../redux';
 
-
 function HooksGiftContainer() {
 
     const numOfGifts = useSelector(state => state.gift.numOfGifts);
