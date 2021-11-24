@@ -7,6 +7,10 @@ function ListEomployee() {
     const [employees, setEmployees ] = useState([]);
 
     useEffect( () => {
+        getAllEmployees()
+    }, [])
+
+    const getAllEmployees = () => {
         EmployeeService
             .getAllEmployees()
             .then( response => {
@@ -16,7 +20,18 @@ function ListEomployee() {
             .catch(error => {
                 console.log(error)
             })
-    }, [])
+    }
+
+    const deleteEmployee = (employeeId) => {
+        EmployeeService.deleteEmployee(employeeId)
+            .then(response => {
+                getAllEmployees()
+            })
+            .catch(error => {
+                console.log(error)
+            })
+    }
+
     return (
         <div className="container">
             <h2 className="text-center">Employees List</h2>
@@ -28,17 +43,28 @@ function ListEomployee() {
                         <th> Employee First Name</th>
                         <th> Employee Last Name</th>
                         <th> Employee Email Id</th>
+                        <th> Actions </th>
                     </tr>
                 </thead>
                 <tbody>
                         {
                             employees.map(
-                                employee => (
+                                (employee, index) => (
                                     <tr key={employee.id}>
-                                        <td>{ employee.id}</td>
+                                        <td>{ index + 1}</td>
                                         <td> {employee.firstName} </td>
                                         <td>{employee.lastName}</td>
                                         <td>{employee.emailId}</td>
+                                        <td>
+                                            <Link 
+                                                className="btn btn-info" 
+                                                to={`edit-employee/${employee.id}`}> Update </Link>
+                                            <button 
+                                                className="btn btn-danger"
+                                                onClick={ () => deleteEmployee(employee.id)}
+                                                style={ { marginLeft:"10px"} }
+                                                > Delete </button>
+                                        </td>
                                     </tr>
                                 )
                             )

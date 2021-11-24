@@ -1,5 +1,5 @@
-import React, {useState} from 'react'
-import { Link, useHistory } from 'react-router-dom';
+import React, {useState, useEffect} from 'react'
+import { Link, useHistory, useParams } from 'react-router-dom';
 import EmployeeService from './services/EmployeeService';
 
 function AddEmployee() {
@@ -9,11 +9,22 @@ function AddEmployee() {
     const [emailId, setEmailId] = useState("")
     const history = useHistory();
 
-    const saveEmployee = (e) => {
+    const {id} = useParams();
+
+    const saveOrUpdateEmployee = (e) => {
         e.preventDefault();
         const employee = { firstName, lastName, emailId }
 
-        EmployeeService
+        if(id){
+            EmployeeService.updateEmployeeById(id, employee)
+                .then(response => {
+                    history.push("/employees");
+                })
+                .catch(error => {
+                    console.log(error)
+                })
+        }else{
+            EmployeeService
             .createEmployee(employee)
             .then( response => {
                 history.push("/employees");
@@ -21,12 +32,29 @@ function AddEmployee() {
             .catch(error => {
                 console.log(error)
             })
+        }
     }
+    useEffect( () => {
+        EmployeeService.getEmployeeById(id)
+            .then( response => {
+                setFirstName(response.data.firstName);
+                setLastName(response.data.lastName);
+                setEmailId(response.data.emailId);
+            })
+            .catch(error => {
+                console.log(error)
+            })
+    }, [])
+
+    
     return (
         <div>
             <div className="row">
                 <div className="card col-md-6 offset-md-3 offset-md-3">
-                    <h2 className="text-center">Add Employee </h2>
+                    {
+                        id ? <h2 className="text-center">Update Employee </h2> :
+                            <h2 className="text-center">Add Employee </h2>
+                    }
                     <div className="card-body">
                         <form>
                             <div className="form-group mb-2">
@@ -64,8 +92,11 @@ function AddEmployee() {
                             </div>
                             <button 
                                 className="btn btn-success"
-                                onClick={(e) => saveEmployee(e) }
-                                 > Add Employee </button>
+                                onClick={(e) => saveOrUpdateEmployee(e) }
+                                 > {
+                                     id ? "Update Employee" : "Add Employee" 
+                                 } 
+                            </button>
                             <Link to="/employees" className="btn btn-danger"> Cancel</Link>
                         </form>
                     </div>
