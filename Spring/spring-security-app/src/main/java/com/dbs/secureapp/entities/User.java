@@ -23,7 +23,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import com.sun.istack.NotNull;
 
-import lombok.Data;
+import lombok.Data; 
 
 @Data 
 @Table(name = "AUTH_USER_DETAILS")
