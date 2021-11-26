@@ -5,7 +5,7 @@ import './loginpage.css';
 import {userLogin} from '../api/authenticationService';
 import {Alert,Spinner} from 'react-bootstrap';
 
-const LoginPage=({loading,error,...props})=>{
+const LoginPage= ({loading , error, ...props })=>{
 
 
     const [values, setValues] = useState({
@@ -15,6 +15,7 @@ const LoginPage=({loading,error,...props})=>{
 
     const handleSubmit=(evt)=>{
         evt.preventDefault();
+        
         props.authenticate();
 
         userLogin(values).then((response)=>{

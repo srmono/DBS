@@ -25,7 +25,6 @@ export const Dashboard=(props)=>{
     },[])
 
     const logOut=()=>{
-
         localStorage.clear();
         props.history.push('/');
 

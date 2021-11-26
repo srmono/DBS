@@ -35,7 +35,11 @@ public class JWTAuthenticationFilter extends OncePerRequestFilter {
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		
-		String authToken = jwtTokenHelper.getAuthHeaderFromHeader(request);
+		//enable for testing with postman
+		//String authToken = jwtTokenHelper.getAuthHeaderFromHeader(request);
+		
+		//Enable for client
+		String authToken = jwtTokenHelper.getToken(request);
 		
 		if(null != authToken) {
 			String userName = jwtTokenHelper.getUsernameFromToken(authToken);

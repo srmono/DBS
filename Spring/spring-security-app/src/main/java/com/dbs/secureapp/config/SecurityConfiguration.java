@@ -37,6 +37,8 @@ public class SecurityConfiguration extends  WebSecurityConfigurerAdapter{
 //		return super.authenticationManager();
 //	}
 
+	
+	
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 		
@@ -53,6 +55,13 @@ public class SecurityConfiguration extends  WebSecurityConfigurerAdapter{
 			.passwordEncoder(passwordEncoder());
 	}
 	
+	@Override
+	@Bean
+	public AuthenticationManager authenticationManagerBean() throws Exception {
+		// TODO Auto-generated method stub
+		return super.authenticationManagerBean();
+	}
+
 	@Bean
 	public PasswordEncoder passwordEncoder() {
 		return new BCryptPasswordEncoder();
@@ -89,6 +98,7 @@ public class SecurityConfiguration extends  WebSecurityConfigurerAdapter{
 		//http.httpBasic();
 		
 		//h2-console
+		
 		http.csrf().disable().cors().and().headers().frameOptions().disable();
 		
 		
